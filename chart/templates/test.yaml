@@ -1,0 +1,2 @@
+{{- $defaultConfig := $.Files.Get "defaultConfig.yaml" | fromYaml -}}
+{{- merge .Values.config $defaultConfig | toYaml }}
